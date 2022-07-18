@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+             x:Class="Clock.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <gauge:SfRadialGauge x:Name="clockGauge">
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis StartAngle="270"
+                              EndAngle="270"
+                              Minimum="0"
+                              Maximum="12"
+                              ShowFirstLabel="False"
+                              Interval="1"
+                              RadiusFactor="0.85"
+                              EnableLoadingAnimation="False"
+                              MinorTicksPerInterval="4"
+                              OffsetUnit="Factor"
+                              LabelOffset="0.05"
+                              TickOffset="0.01">
+                <gauge:RadialAxis.AxisLabelStyle>
+                    <gauge:GaugeLabelStyle FontSize="12" 
+                                           TextColor="#355C7D"/>
+                </gauge:RadialAxis.AxisLabelStyle>
+                <gauge:RadialAxis.AxisLineStyle>
+                    <gauge:RadialLineStyle Thickness="3"/>
+                </gauge:RadialAxis.AxisLineStyle>
+
+                <gauge:RadialAxis.MajorTickStyle >
+                    <gauge:RadialTickStyle Length="0.08" 
+                                           LengthUnit="Factor" 
+                                           StrokeThickness="1.5"/>
+                </gauge:RadialAxis.MajorTickStyle>
+
+                <gauge:RadialAxis.MinorTickStyle>
+                    <gauge:RadialTickStyle Length="0.04" 
+                                           LengthUnit="Factor"
+                                           StrokeThickness="1"/>
+                </gauge:RadialAxis.MinorTickStyle>
+
+                <gauge:RadialAxis.Pointers>
+                    <gauge:NeedlePointer x:Name="hoursPointer"
+                                         EnableAnimation="True"
+                                         AnimationDuration="800"
+                                         AnimationEasing="{x:Static Easing.BounceOut}"
+                                         NeedleLength="0.6"
+                                         NeedleStartWidth="2"
+                                         NeedleEndWidth="5"
+                                         NeedleFill="#355C7D"
+                                         KnobRadius="0">
+                    </gauge:NeedlePointer>
+                    <gauge:NeedlePointer x:Name="minutesPointer"  
+                                         EnableAnimation="True"
+                                         AnimationDuration="800"
+                                         AnimationEasing="{x:Static Easing.BounceOut}"
+                                         NeedleLength="0.85"
+                                         NeedleStartWidth="1"
+                                         NeedleEndWidth="3"
+                                         NeedleFill="#355C7D"
+                                         KnobFill="#00A8B5"
+                                         KnobRadius="0.05" />
+                    <gauge:NeedlePointer x:Name="secondsPointer"
+                                         EnableAnimation="True"
+                                         AnimationDuration="800"
+                                         AnimationEasing="{x:Static Easing.BounceOut}"
+                                         NeedleLength="0.9"
+                                         NeedleStartWidth="2"
+                                         NeedleEndWidth="2"
+                                         NeedleFill="#00A8B5"
+                                         TailWidth="2"
+                                         TailLength="0.15"
+                                         TailFill="#00A8B5"
+                                         KnobFill="White"
+                                         KnobRadius="0.03"/>
+                </gauge:RadialAxis.Pointers>
+            </gauge:RadialAxis>
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+
+</ContentPage>
