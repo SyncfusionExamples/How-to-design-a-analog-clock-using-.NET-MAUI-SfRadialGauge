@@ -5,10 +5,6 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clock", "Clock.csproj", "{512D9334-2AA7-4593-8FA0-A963AE8548B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Syncfusion.Maui.Gauges", "..\..\..\..\Source\MAUI\Gauges\maui\src\gauges\Syncfusion.Maui.Gauges.csproj", "{43C558FC-B94A-4A95-9382-25A0F05CFFCD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Syncfusion.Maui.Core", "..\..\..\..\Source\MAUI\Core\maui\src\core\Syncfusion.Maui.Core.csproj", "{4E3846BA-A051-4C8E-9572-2BA1DD3902D3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,18 +21,6 @@ Global
 		{512D9334-2AA7-4593-8FA0-A963AE8548B5}.Release-Xml|Any CPU.ActiveCfg = Release|Any CPU
 		{512D9334-2AA7-4593-8FA0-A963AE8548B5}.Release-Xml|Any CPU.Build.0 = Release|Any CPU
 		{512D9334-2AA7-4593-8FA0-A963AE8548B5}.Release-Xml|Any CPU.Deploy.0 = Release|Any CPU
-		{43C558FC-B94A-4A95-9382-25A0F05CFFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43C558FC-B94A-4A95-9382-25A0F05CFFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43C558FC-B94A-4A95-9382-25A0F05CFFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43C558FC-B94A-4A95-9382-25A0F05CFFCD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43C558FC-B94A-4A95-9382-25A0F05CFFCD}.Release-Xml|Any CPU.ActiveCfg = Release-Xml|Any CPU
-		{43C558FC-B94A-4A95-9382-25A0F05CFFCD}.Release-Xml|Any CPU.Build.0 = Release-Xml|Any CPU
-		{4E3846BA-A051-4C8E-9572-2BA1DD3902D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E3846BA-A051-4C8E-9572-2BA1DD3902D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E3846BA-A051-4C8E-9572-2BA1DD3902D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E3846BA-A051-4C8E-9572-2BA1DD3902D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E3846BA-A051-4C8E-9572-2BA1DD3902D3}.Release-Xml|Any CPU.ActiveCfg = Release-Xml|Any CPU
-		{4E3846BA-A051-4C8E-9572-2BA1DD3902D3}.Release-Xml|Any CPU.Build.0 = Release-Xml|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

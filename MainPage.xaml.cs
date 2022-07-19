@@ -20,12 +20,12 @@ public partial class MainPage : ContentPage
 
                 if (((double)(DateTime.Now.Minute / 5.0) + DateTime.Now.Second / 360.0) == 0)
                 {
-                    minutesPointer.EnableAnimation = true;
+                    minutesPointer.EnableAnimation = false;
                 }
 
                 if ((DateTime.Now.Hour % 12 + DateTime.Now.Minute / 60.0) == 0)
                 {
-                    hoursPointer.EnableAnimation = true;
+                    hoursPointer.EnableAnimation = false;
                 }
 
                 secondsPointer.Value = DateTime.Now.Second / 5.0;
