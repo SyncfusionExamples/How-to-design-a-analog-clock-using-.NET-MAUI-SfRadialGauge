@@ -1,6 +1,6 @@
 # How to design a analog clock using .NET MAUI SfRadialGauge
 
-This repository contains sample for how to design an analog clock using the [Syncfusion .NET MAUI SfRadialGauge](https://help.syncfusion.com/maui/radial-gauge/getting-started) control.
+This repository contains sample to design an analog clock using the [Syncfusion .NET MAUI SfRadialGauge](https://help.syncfusion.com/maui/radial-gauge/getting-started) control.
 
 Please refer the KB through this [link](https://www.syncfusion.com/kb/13559/how-to-design-an-analog-clock-using-net-maui-radial-gauge-sfradialgauge).
 
