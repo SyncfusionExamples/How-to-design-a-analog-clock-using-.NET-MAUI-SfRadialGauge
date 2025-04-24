@@ -2,16 +2,15 @@
 
 public partial class MainPage : ContentPage
 {
-    [Obsolete]
     public MainPage()
 	{
 		InitializeComponent();
 		secondsPointer.Value = DateTime.Now.Second / 10;
 		minutesPointer.Value = (double)(DateTime.Now.Minute / 5.0);
 		hoursPointer.Value = DateTime.Now.Hour / 2  + DateTime.Now.Minute / 60.0;
-		Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+		Dispatcher.StartTimer(TimeSpan.FromSeconds(1), () =>
 		{
-			Device.BeginInvokeOnMainThread(() =>
+			Dispatcher.Dispatch(() =>
 			{
                 if (DateTime.Now.Second / 5.0 == 0)
                 {
